@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6f7;
+    color: #555;
+    font-size: 11px;
+}
+
+
+/* ==========================================
+   TOP NAVIGATION
+========================================== */
+
+.top-navigation {
+    height: 30px;
+    background: #55aee0;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px;
+}
+
+.nav-tab {
+    height: 25px;
+    border: none;
+    padding: 0 14px;
+
+    background: #e5e5e5;
+    color: #333;
+
+    font-size: 10px;
+
+    border-right: 1px solid #ccc;
+}
+
+.nav-tab i {
+    margin-right: 5px;
+}
+
+.nav-tab.active {
+    background: #4da5dc;
+    color: white;
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.dashboard-container {
+    width: 96%;
+    margin: 18px auto 40px;
+
+    background: white;
+
+    padding: 10px 15px 30px;
+
+    min-height: calc(100vh - 50px);
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.dashboard-title h1 {
+    color: #4169e1;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    margin: 0 0 8px;
+}
+
+.dashboard-date {
+    color: #ff8c00;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   SUMMARY CARDS
+========================================== */
+
+.summary-area {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+.summary-card {
+    width: 170px;
+
+    height: 22px;
+
+    border-radius: 3px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+.summary-card strong {
+    font-size: 9px;
+}
+
+.summary-card.critical {
+    background: #f00000;
+}
+
+.summary-card.urgent {
+    background: #ed8a00;
+}
+
+.summary-card.infocus {
+    background: #4d6edc;
+}
+
+
+/* ==========================================
+   FILTER
+========================================== */
+
+.filter-area {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 5px 0 23px;
+}
+
+.client-filter {
+    width: 265px;
+
+    height: 20px;
+
+    border-radius: 0;
+
+    padding: 1px 5px;
+
+    font-size: 8px;
+}
+
+.unassigned-alert {
+    background: #f00000;
+
+    color: white;
+
+    padding: 7px 25px;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    margin-right: 18%;
+}
+
+
+/* ==========================================
+   MAIN TABLE
+========================================== */
+
+.job-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.job-table {
+    width: 100%;
+
+    min-width: 1200px;
+
+    border-collapse: collapse;
+
+    margin-bottom: 0;
+
+    font-size: 8px;
+}
+
+.job-table th {
+    background: #42ad75;
+
+    color: white;
+
+    text-align: center;
+
+    border: 1px solid #888;
+
+    padding: 6px 5px;
+
+    height: 25px;
+
+    white-space: nowrap;
+
+    font-weight: 600;
+}
+
+.job-table td {
+    border: 1px solid #999;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    padding: 4px 5px;
+
+    height: 27px;
+
+    white-space: nowrap;
+}
+
+.job-table tbody tr:hover {
+    background: #f2f8ff;
+}
+
+
+/* ==========================================
+   SERIAL NUMBER
+========================================== */
+
+.serial {
+    background: #4d70d9;
+
+    color: white;
+
+    font-weight: bold;
+
+    width: 40px;
+}
+
+.serial.critical {
+    background: #f00000;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.small-action {
+    background: white;
+
+    border: 1px solid #555;
+
+    font-size: 8px;
+
+    padding: 2px 6px;
+
+    color: #333;
+}
+
+.small-action:hover {
+    background: #eee;
+}
+
+.assign-btn {
+    background: #258900;
+
+    color: white;
+
+    border: none;
+
+    padding: 4px 22px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+.assign-btn:hover {
+    background: #1d6e00;
+}
+
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+.focus-critical {
+    color: red;
+
+    font-weight: 600;
+}
+
+.focus-normal {
+    color: #4d75d5;
+}
+
+
+/* ==========================================
+   JOB TITLE
+========================================== */
+
+.job-title-cell {
+    text-align: left !important;
+
+    max-width: 260px;
+
+    white-space: normal !important;
+}
+
+.job-title-cell a {
+    color: #333;
+
+    text-decoration: underline;
+
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   ASSIGNED TM
+========================================== */
+
+.assigned-tm {
+    color: #72a9df;
+
+    text-align: left !important;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   LOCK BUTTON
+========================================== */
+
+.lock-area {
+    text-align: center;
+
+    margin: 10px 0 15px;
+}
+
+.lock-button {
+    border: none;
+
+    background: #4cc7e9;
+
+    color: white;
+
+    padding: 7px 20px;
+
+    border-radius: 4px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   BOTTOM TABLES
+========================================== */
+
+.bottom-section {
+    margin-top: 4px;
+}
+
+.bottom-section h2 {
+    text-align: center;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #222;
+
+    margin: 0 0 15px;
+}
+
+.bottom-table {
+    width: 95%;
+
+    margin: auto;
+
+    font-size: 8px;
+
+    border-collapse: collapse;
+}
+
+.bottom-table th {
+    background: #42ad75;
+
+    color: white;
+
+    border: 1px solid #888;
+
+    text-align: center;
+
+    padding: 5px;
+}
+
+.bottom-table td {
+    border: 1px solid #999;
+
+    text-align: center;
+
+    padding: 4px;
+}
+
+.blue-text {
+    color: #6ea5df;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .dashboard-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filter-area {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .unassigned-alert {
+        margin-right: 0;
+    }
+
+    .summary-area {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .dashboard-title h1 {
+        font-size: 14px;
+    }
+
+    .dashboard-date {
+        font-size: 12px;
+    }
+
+    .summary-card {
+        width: 140px;
+    }
+
+    .top-navigation {
+        overflow-x: auto;
+    }
+
+    .nav-tab {
+        white-space: nowrap;
+    }
+}

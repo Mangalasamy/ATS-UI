@@ -1,0 +1,506 @@
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.sourced-interview-page {
+    min-height: 100vh;
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.interview-header {
+    height: 60px;
+
+    background: #416fe6;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 29px;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 17px;
+
+    margin-bottom: 52px;
+}
+
+.search-box {
+    width: 510px;
+
+    height: 32px;
+
+    border: 1px solid #d4d4d4;
+
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+.search-box input::placeholder {
+    color: #bcbcbc;
+}
+
+.search-box button {
+    width: 25px;
+
+    border: none;
+
+    border-left: 1px solid #ddd;
+
+    background: #ffffff;
+
+    color: #555;
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.summary-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 28px;
+
+    width: 92%;
+
+    margin: auto auto 24px;
+}
+
+.summary-card {
+    height: 70px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    transition: transform 0.15s;
+}
+
+.summary-card:hover {
+    transform: translateY(-2px);
+}
+
+.summary-card strong {
+    font-size: 17px;
+
+    line-height: 20px;
+}
+
+.summary-card span {
+    line-height: 20px;
+}
+
+
+/* To Schedule */
+
+.schedule-card {
+    background: #5dd4ca;
+
+    border: 2px solid #111;
+}
+
+
+/* Scheduled */
+
+.scheduled-card {
+    background: #ffd500;
+}
+
+
+/* Completed */
+
+.completed-card {
+    background: #c8c9f2;
+}
+
+
+/* Offered */
+
+.offered-card {
+    background: #f75e42;
+}
+
+
+/* Hired */
+
+.hired-card {
+    background: #51b46d;
+}
+
+
+/* Unqualified */
+
+.unqualified-card {
+    background: #6654ca;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.interview-table-wrapper {
+    width: 92%;
+
+    margin: 0 auto;
+
+    overflow-x: auto;
+}
+
+.interview-table {
+    width: 100%;
+
+    min-width: 1100px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-size: 12px;
+}
+
+
+/* Header */
+
+.interview-table thead th {
+    height: 35px;
+
+    background: #40aa70;
+
+    color: white;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+
+    padding: 6px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* Rows */
+
+.interview-table tbody td {
+    min-height: 55px;
+
+    border: 1px solid #ddd;
+
+    padding: 7px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    line-height: 15px;
+}
+
+.interview-table tbody tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.interview-table tbody tr:hover {
+    background: #f5fbff;
+}
+
+
+/* =====================================================
+   COLUMN WIDTHS
+===================================================== */
+
+.interview-table th:nth-child(1) {
+    width: 110px;
+}
+
+.interview-table th:nth-child(2) {
+    width: 145px;
+}
+
+.interview-table th:nth-child(3) {
+    width: 120px;
+}
+
+.interview-table th:nth-child(4) {
+    width: 105px;
+}
+
+.interview-table th:nth-child(5) {
+    width: 100px;
+}
+
+.interview-table th:nth-child(6) {
+    width: 100px;
+}
+
+.interview-table th:nth-child(7) {
+    width: 100px;
+}
+
+.interview-table th:nth-child(8) {
+    width: 100px;
+}
+
+.interview-table th:nth-child(9) {
+    width: 95px;
+}
+
+.interview-table th:nth-child(10) {
+    width: 265px;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.interview-table a {
+    color: #111;
+
+    text-decoration: none;
+
+    border-bottom: 1px dotted #655de4;
+}
+
+.interview-table td:first-child a,
+.interview-table td:nth-child(2) a,
+.interview-table td:nth-child(3) a {
+    color: #111;
+}
+
+
+/* =====================================================
+   JOB TITLE
+===================================================== */
+
+.job-title-cell {
+    text-align: left !important;
+
+    line-height: 14px;
+
+    white-space: normal;
+}
+
+
+/* =====================================================
+   TSM
+===================================================== */
+
+.assigned {
+    color: #5139ff;
+
+    font-weight: 500;
+}
+
+.not-assigned {
+    color: red;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.action-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    gap: 8px;
+}
+
+.action-buttons button {
+    width: 29px;
+
+    height: 29px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    transition: transform 0.15s;
+}
+
+.action-buttons button:hover {
+    transform: scale(1.15);
+}
+
+
+/* Individual icons */
+
+.action-buttons button:nth-child(1) {
+    color: #47756f;
+}
+
+.action-buttons button:nth-child(2) {
+    color: #f2c98f;
+}
+
+.action-buttons button:nth-child(3) {
+    color: #8da4bc;
+}
+
+.action-buttons button:nth-child(4) {
+    color: #59616d;
+}
+
+.action-buttons button:nth-child(5) {
+    color: #f27612;
+}
+
+
+/* =====================================================
+   NO RECORD
+===================================================== */
+
+.no-record {
+    height: 120px;
+
+    color: #42a5df;
+
+    font-size: 25px !important;
+
+    border: none !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .summary-container {
+        gap: 15px;
+    }
+
+    .interview-table-wrapper {
+        width: 96%;
+    }
+
+    .summary-container {
+        width: 96%;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .interview-header {
+        font-size: 24px;
+    }
+
+    .summary-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .search-box {
+        width: 450px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .interview-header {
+        height: 55px;
+
+        font-size: 20px;
+    }
+
+    .search-container {
+        margin-bottom: 30px;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+
+    .summary-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 92%;
+
+        gap: 10px;
+    }
+
+    .summary-card {
+        height: 65px;
+
+        font-size: 14px;
+    }
+
+    .summary-card strong {
+        font-size: 16px;
+    }
+
+    .interview-table-wrapper {
+        width: 95%;
+    }
+
+    .interview-table {
+        min-width: 1200px;
+    }
+}

@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f6;
+    color: #666;
+    font-size: 13px;
+}
+
+.job-page {
+    min-height: 100vh;
+    background: #f4f5f6;
+}
+
+.top-border {
+    height: 6px;
+    background: #4ca7df;
+    width: 100%;
+}
+
+.job-container {
+    width: calc(100% - 30px);
+    margin: 10px auto 30px;
+    background: white;
+    padding: 12px 25px 40px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.job-header {
+    position: relative;
+    min-height: 105px;
+}
+
+.job-location {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.job-location svg {
+    color: #4da6e2;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.location-name {
+    font-size: 16px;
+    color: #666;
+}
+
+.full-time {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.recruiter {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.recruiter span {
+    margin-right: 15px;
+}
+
+.recruiter strong {
+    color: #666;
+}
+
+.job-header h1 {
+    text-align: center;
+    margin: -5px 0 0;
+    color: #777;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+    height: 32px;
+    background: #4895ed;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+
+/* =========================
+   REQUIREMENTS
+========================= */
+
+.requirements {
+    margin-bottom: 8px;
+}
+
+.requirement-row {
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr 1fr auto;
+    align-items: center;
+    min-height: 41px;
+    padding: 3px 5px;
+    column-gap: 10px;
+}
+
+.requirement-name {
+    font-size: 12px;
+}
+
+.requirement-value {
+    font-size: 12px;
+}
+
+.requirement-type {
+    font-size: 12px;
+}
+
+.requirement-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.status-success {
+    color: #198900;
+    font-size: 24px;
+}
+
+.status-question {
+    color: #e9bd28;
+    font-size: 25px;
+}
+
+.edit-btn {
+    border: 0;
+    background: #4895ed;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 2px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.edit-btn svg {
+    margin-right: 4px;
+    font-size: 10px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    padding: 5px 15px 16px;
+}
+
+.skill-item {
+    width: 62%;
+    min-height: 39px;
+    margin: 7px 0;
+    padding: 8px 15px;
+    background: #348e55;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.skill-action {
+    position: absolute;
+    left: calc(100% + 135px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-action > svg {
+    color: #198900;
+    font-size: 24px;
+}
+
+.nice-to-have {
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 8px;
+}
+
+.nice-to-have > svg {
+    color: #e9bd28;
+    font-size: 25px;
+}
+
+
+/* =========================
+   RIGHT SIDE TABS
+========================= */
+
+.job-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.job-tabs button {
+    flex: 1;
+    height: 32px;
+    border: 0;
+    background: #ddd;
+    font-size: 12px;
+}
+
+.job-tabs button.active {
+    background: #4895ed;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    position: relative;
+    padding: 0 5px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.description-edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    border: 0;
+    background: #4895ed;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 2px;
+    font-size: 11px;
+}
+
+.description h4 {
+    font-size: 12px;
+    margin: 2px 0 14px;
+    color: #555;
+}
+
+.description h5 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.description ul {
+    padding-left: 28px;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
+
+.description ul ul {
+    margin-top: 6px;
+    padding-left: 25px;
+}
+
+
+/* =========================
+   CUSTOMER REMARKS
+========================= */
+
+.customer-header {
+    height: 32px;
+    background: #4895ed;
+    color: white;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-weight: 600;
+
+    margin-top: 25px;
+}
+
+.customer-header .edit-btn {
+    margin-left: 20px;
+    background: transparent;
+    padding: 2px 5px;
+}
+
+.customer-content {
+    padding: 15px 10px 20px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.customer-content p {
+    margin-bottom: 15px;
+}
+
+.urgent-message {
+    color: #b00050;
+    font-size: 15px;
+    margin: 35px 0 20px;
+}
+
+.warning-text {
+    color: red;
+    margin-bottom: 25px;
+}
+
+.green-note {
+    color: green;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .job-header h1 {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .skill-item {
+        width: 80%;
+    }
+
+    .skill-action {
+        left: calc(100% + 20px);
+    }
+
+    .requirement-row {
+        grid-template-columns: 1.3fr 1fr;
+        row-gap: 8px;
+    }
+
+    .requirement-action {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .job-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .job-header h1 {
+        font-size: 19px;
+    }
+
+    .requirement-row {
+        grid-template-columns: 1fr;
+        padding: 10px 5px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .skill-item {
+        width: 100%;
+    }
+
+    .skill-action {
+        position: static;
+        margin-left: 10px;
+    }
+
+    .job-tabs button {
+        font-size: 11px;
+    }
+}

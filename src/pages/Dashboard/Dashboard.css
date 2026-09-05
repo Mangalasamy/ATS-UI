@@ -1,0 +1,224 @@
+
+/* =========================
+   Header
+========================= */
+
+
+
+
+/* =========================
+   Search
+========================= */
+
+.search-section {
+    margin-top: 25px;
+}
+
+.search-section .form-control {
+    height: 30px;
+    font-size: 11px;
+    border-radius: 0;
+    color: #555;
+}
+
+.search-section .form-control::placeholder {
+    color: #aaa;
+}
+
+.search-section .btn {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 0;
+    font-size: 10px;
+}
+
+.job-search {
+    border-color: #5dade2 !important;
+}
+
+.search-section .btn-primary {
+    background: #5dade2;
+    border-color: #5dade2;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.job-table-wrapper {
+    border-radius: 0;
+    overflow-x: auto;
+}
+
+.job-table {
+    min-width: 1150px;
+    font-size: 12px;
+}
+
+.job-table thead {
+    background: #46b493;
+    color: white;
+}
+
+.job-table thead th {
+    border: none;
+    padding: 10px 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.job-table thead th:first-child {
+    color: #ffff00;
+}
+
+.job-table tbody tr {
+    background: #f3f4ff;
+}
+
+.job-table tbody td {
+    border: none;
+    padding: 14px 12px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   Priority
+========================= */
+
+.priority-star {
+    color: #f4b400;
+    font-size: 18px;
+}
+
+
+/* =========================
+   Company Logo
+========================= */
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #202b38;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.company-name {
+    color: #63778a;
+}
+
+
+/* =========================
+   Client Focus
+========================= */
+
+.client-focus {
+    color: #1264e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.client-focus:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Status
+========================= */
+
+.status-active {
+    color: #586b7c;
+}
+
+
+/* =========================
+   Progress
+========================= */
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    height: 22px;
+    background: #d9dce4;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 170px;
+}
+
+.progress-container i {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #64717c;
+    font-size: 15px;
+}
+
+.progress-count {
+    background: #c5c9d1;
+    padding: 3px 8px;
+    font-weight: 600;
+    color: white;
+}
+
+.progress-status {
+    padding: 3px 10px;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* =========================
+   WhatsApp
+========================= */
+
+.whatsapp-btn {
+    width: 38px;
+    height: 35px;
+
+    border: none;
+    background: #3dcc5a;
+    color: white;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-btn:hover {
+    background: #2dbb4b;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    .priority-page {
+        padding: 15px;
+    }
+
+    .search-section {
+        margin-bottom: 25px;
+    }
+
+    .job-table {
+        min-width: 1100px;
+    }
+
+}

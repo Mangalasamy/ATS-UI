@@ -1,0 +1,465 @@
+
+
+.doodle-page {
+    min-height: 100vh;
+    background: #fff;
+    padding: 25px 18px 40px;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.dashboard-header {
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+
+    color: #39a867;
+
+    font-size: 36px;
+
+    font-weight: 400;
+}
+
+
+/* ==========================================
+   RECRUITER FILTER
+========================================== */
+
+.recruiter-filter {
+    position: relative;
+
+    width: 425px;
+
+    height: 34px;
+
+    margin: 50px auto 55px;
+
+    border: 1px solid #55a7e8;
+
+    display: flex;
+}
+
+.recruiter-filter label {
+    position: absolute;
+
+    left: 10px;
+
+    top: -8px;
+
+    background: white;
+
+    padding: 0 4px;
+
+    color: #5aa9e8;
+
+    font-size: 12px;
+}
+
+.recruiter-filter select {
+    width: calc(100% - 28px);
+
+    border: none;
+
+    outline: none;
+
+    padding: 4px 10px;
+
+    appearance: none;
+
+    background: white;
+
+    color: #555;
+
+    font-size: 12px;
+}
+
+.recruiter-filter button {
+    width: 28px;
+
+    border: none;
+
+    background: #5da9e1;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   SUMMARY
+========================================== */
+
+.summary-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 43px;
+
+    margin: 0 33px 30px;
+}
+
+.summary-card {
+    height: 74px;
+
+    border-radius: 17px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.summary-card.blue {
+    background: #3c98c7;
+}
+
+.summary-card.orange {
+    background: #f36b35;
+}
+
+.summary-value {
+    font-size: 21px;
+
+    line-height: 25px;
+
+    font-weight: 500;
+}
+
+.summary-extra {
+    font-size: 16px;
+
+    margin-left: 3px;
+}
+
+.summary-label {
+    font-size: 14px;
+
+    margin-top: 4px;
+}
+
+
+/* ==========================================
+   ACTIVE JOBS
+========================================== */
+
+.jobs-section h2 {
+    color: #3498d0;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    margin: 0 0 15px;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.jobs-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.jobs-table {
+    width: 100%;
+
+    min-width: 1250px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    font-size: 11px;
+}
+
+.jobs-table thead th {
+    height: 48px;
+
+    background: #3eaa6d;
+
+    color: white;
+
+    border: 1px solid #d5d5d5;
+
+    padding: 5px;
+
+    text-align: center;
+
+    font-weight: 500;
+
+    vertical-align: middle;
+}
+
+.jobs-table tbody td {
+    height: 48px;
+
+    border: 1px solid #ddd;
+
+    padding: 6px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    color: #222;
+}
+
+
+/* Alternating rows */
+
+.jobs-table tbody tr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+
+/* ==========================================
+   COLUMN WIDTHS
+========================================== */
+
+.jobs-table th:nth-child(1) {
+    width: 40px;
+}
+
+.jobs-table th:nth-child(2) {
+    width: 145px;
+}
+
+.jobs-table th:nth-child(3) {
+    width: 90px;
+}
+
+.jobs-table th:nth-child(4) {
+    width: 80px;
+}
+
+.jobs-table th:nth-child(5) {
+    width: 100px;
+}
+
+.jobs-table th:nth-child(6) {
+    width: 80px;
+}
+
+.jobs-table th:nth-child(7) {
+    width: 105px;
+}
+
+.jobs-table th:nth-child(8) {
+    width: 100px;
+}
+
+.jobs-table th:nth-child(9) {
+    width: 105px;
+}
+
+.jobs-table th:nth-child(10),
+.jobs-table th:nth-child(11),
+.jobs-table th:nth-child(12),
+.jobs-table th:nth-child(13) {
+    width: 80px;
+}
+
+
+/* ==========================================
+   SORT ICON
+========================================== */
+
+.sortable {
+    position: relative;
+
+    padding-right: 15px !important;
+}
+
+.sortable i {
+    position: absolute;
+
+    right: 4px;
+
+    bottom: 5px;
+
+    font-size: 8px;
+
+    color: #111;
+}
+
+
+/* ==========================================
+   JOB TITLE
+========================================== */
+
+.job-title {
+    text-align: left !important;
+
+    padding-left: 8px !important;
+}
+
+.job-title a {
+    color: #63a6e5;
+
+    text-decoration: none;
+
+    border-bottom: 1px dotted #63a6e5;
+
+    line-height: 14px;
+}
+
+.job-title a:hover {
+    color: #3183c8;
+}
+
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-cell {
+    text-align: left !important;
+
+    line-height: 13px;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.number-link {
+    color: red;
+
+    text-decoration: none;
+
+    border-bottom: 1px dotted red;
+}
+
+
+/* ==========================================
+   PRIORITY STATUS
+========================================== */
+
+.priority-status {
+    color: red !important;
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.table-action {
+    border: none;
+
+    border-radius: 4px;
+
+    color: white;
+
+    min-width: 60px;
+
+    height: 28px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    font-weight: 500;
+}
+
+.table-action:hover {
+    opacity: 0.85;
+}
+
+.boost {
+    background: #4b7418;
+}
+
+.pause {
+    background: #888;
+}
+
+.edit {
+    background: #4b7418;
+}
+
+.notes {
+    background: #4b7418;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .summary-container {
+        gap: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .summary-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recruiter-filter {
+        margin-bottom: 35px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .doodle-page {
+        padding: 20px 10px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 25px;
+    }
+
+    .recruiter-filter {
+        width: 100%;
+
+        margin-top: 35px;
+    }
+
+    .summary-container {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .summary-card {
+        height: 70px;
+    }
+
+    .jobs-table {
+        min-width: 1250px;
+    }
+}

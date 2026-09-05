@@ -1,0 +1,668 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f7;
+    color: #666;
+    font-size: 12px;
+}
+
+.candidate-page {
+    min-height: 100vh;
+    background: #f4f6f7;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.candidate-header {
+    min-height: 92px;
+
+    background: linear-gradient(
+        90deg,
+        #3dbb91,
+        #54dfb7
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    padding: 12px 11%;
+}
+
+.candidate-info {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.candidate-avatar {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #222;
+
+    border: 2px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.candidate-name-area {
+    margin-left: 8px;
+}
+
+.candidate-name {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.candidate-role {
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+.edit-icon {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.social-icons {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: white;
+    color: #1677a8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.submitted-date {
+    width: 40%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.candidate-contact {
+    width: 30%;
+    font-size: 9px;
+    line-height: 24px;
+}
+
+.contact-icon {
+    margin-right: 7px;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   PIPELINE
+===================================================== */
+
+.pipeline {
+    height: 50px;
+
+    background: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 3px 25px;
+}
+
+.pipeline-item {
+    text-align: center;
+    width: 10%;
+    position: relative;
+}
+
+.pipeline-circle {
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    font-size: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pipeline-item.active .pipeline-circle {
+    border: 1px solid #47a6dc;
+    color: #47a6dc;
+}
+
+.pipeline-label {
+    margin-top: 3px;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.candidate-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+    padding: 2px 2%;
+}
+
+.candidate-actions button {
+    font-size: 9px;
+    min-width: 75px;
+}
+
+.whatsapp-btn {
+    background: #39c56a;
+    color: white;
+}
+
+.upload-btn {
+    background: #258d08;
+    color: white;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main-content {
+    padding: 0 2%;
+}
+
+.page-section-title {
+    font-size: 15px;
+    font-weight: 600;
+
+    margin: 7px 0 4px;
+
+    color: #68747c;
+}
+
+
+/* =====================================================
+   TABLE SECTION
+===================================================== */
+
+.table-section {
+    background: white;
+}
+
+.table-header {
+    min-height: 18px;
+
+    background: #42b393;
+    color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    align-items: center;
+
+    padding: 4px 10px;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    border-radius: 2px;
+}
+
+.table-header.single {
+    display: block;
+}
+
+.requirement-row {
+    min-height: 27px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr
+        100px;
+
+    align-items: center;
+
+    padding: 2px 10px;
+
+    font-size: 8px;
+
+    background: white;
+}
+
+.row-status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.success-circle {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #208800;
+
+    color: white;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.edit-button {
+    border: 0;
+
+    background: #45b998;
+
+    color: white;
+
+    padding: 3px 8px;
+
+    border-radius: 2px;
+
+    font-size: 8px;
+}
+
+
+/* =====================================================
+   MATCH PERCENTAGE
+===================================================== */
+
+.match-percentage {
+    position: absolute;
+
+    left: 47%;
+
+    margin-top: -54px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 2px solid #198900;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #198900;
+
+    font-size: 9px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SALARY
+===================================================== */
+
+.salary-row {
+    min-height: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        100px;
+
+    align-items: center;
+
+    padding: 2px 10px;
+
+    font-size: 8px;
+}
+
+.notice-row {
+    min-height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 4px 10px;
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-area {
+    padding: 6px 12px;
+}
+
+.candidate-skill {
+    width: 82%;
+
+    min-height: 28px;
+
+    background: #318b51;
+
+    color: white;
+
+    margin-bottom: 5px;
+
+    border-radius: 3px;
+
+    padding: 6px 10px;
+
+    text-align: center;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    position: relative;
+}
+
+.skill-status {
+    position: absolute;
+
+    left: calc(100% + 15px);
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.empty-skill-row {
+    min-height: 30px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    padding-right: 10px;
+}
+
+.question-area {
+    min-height: 40px;
+    padding: 10px;
+}
+
+
+/* =====================================================
+   RIGHT TABS
+===================================================== */
+
+.candidate-tabs {
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 0;
+}
+
+.candidate-tabs button {
+    flex: 1;
+
+    height: 18px;
+
+    border: 0;
+
+    background: #d8d8d8;
+
+    color: #444;
+
+    font-size: 8px;
+}
+
+.candidate-tabs button.active {
+    background: #42b393;
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   TAB CONTENT
+===================================================== */
+
+.tab-content-box {
+    background: white;
+
+    min-height: 450px;
+
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: 1px solid #eee;
+}
+
+.tab-content-box h4 {
+    font-size: 9px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #555;
+}
+
+.engagement-table {
+    border-top: 1px solid #eee;
+}
+
+.engagement-header {
+    display: grid;
+
+    grid-template-columns:
+        15%
+        48%
+        15%
+        12%
+        10%;
+
+    font-weight: bold;
+
+    padding: 5px;
+
+    font-size: 7px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.engagement-row {
+    display: grid;
+
+    grid-template-columns:
+        15%
+        48%
+        15%
+        12%
+        10%;
+
+    padding: 6px;
+
+    font-size: 8px;
+
+    line-height: 1.3;
+
+    vertical-align: top;
+}
+
+.engagement-description {
+    white-space: normal;
+}
+
+.tab-placeholder {
+    height: 400px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #aaa;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .candidate-header {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .candidate-info,
+    .submitted-date,
+    .candidate-contact {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .submitted-date {
+        text-align: left;
+    }
+
+    .pipeline {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .pipeline-item {
+        min-width: 80px;
+    }
+
+    .match-percentage {
+        display: none;
+    }
+
+    .candidate-skill {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .candidate-header {
+        min-height: auto;
+    }
+
+    .candidate-actions {
+        flex-wrap: wrap;
+    }
+
+    .requirement-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+
+        padding: 8px;
+    }
+
+    .salary-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+
+        padding: 8px;
+    }
+
+    .candidate-skill {
+        width: 100%;
+    }
+
+    .skill-status {
+        position: static;
+
+        transform: none;
+
+        justify-content: center;
+
+        margin-top: 5px;
+    }
+
+    .candidate-tabs {
+        overflow-x: auto;
+    }
+
+    .candidate-tabs button {
+        min-width: 120px;
+    }
+
+    .engagement-table {
+        overflow-x: auto;
+    }
+
+    .engagement-header,
+    .engagement-row {
+        min-width: 600px;
+    }
+}

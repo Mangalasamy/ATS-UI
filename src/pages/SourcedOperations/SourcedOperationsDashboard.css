@@ -1,0 +1,551 @@
+
+
+
+
+
+
+
+/* Products */
+
+.product-nav {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+
+.product-nav span {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0 14px;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+.product-nav span i {
+    font-size: 14px;
+}
+
+.product-nav span.active {
+    color: #4ba8df;
+
+    border-bottom: 2px solid #4ba8df;
+}
+
+
+/* User */
+
+.top-user {
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding-right: 25px;
+
+    color: #555;
+
+    font-size: 12px;
+}
+
+.top-user i {
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MAIN NAVIGATION
+===================================================== */
+
+.main-nav {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    background: #62afe0;
+
+    padding-left: 0;
+}
+
+.nav-item {
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0 18px;
+
+    color: white;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.nav-item i {
+    font-size: 13px;
+}
+
+.nav-item.active {
+    background: #4c9fd2;
+}
+
+
+/* =====================================================
+   DASHBOARD BANNER
+===================================================== */
+
+.dashboard-banner {
+    height: 98px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #426fe5;
+
+    color: white;
+}
+
+.dashboard-banner h1 {
+    margin: 0;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.dashboard-content {
+    width: 92%;
+
+    margin: 16px auto 50px;
+}
+
+
+/* =====================================================
+   NOTE CARDS
+===================================================== */
+
+.note-cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 28px;
+
+    margin-bottom: 40px;
+}
+
+.note-card {
+    width: 263px;
+
+    height: 54px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #f0e1cd;
+
+    color: #111;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.note-card:hover {
+    background: #ead5bc;
+}
+
+
+/* =====================================================
+   WORKFLOW CARDS
+===================================================== */
+
+.workflow-cards {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 36px;
+
+    margin: 0 25px 37px;
+}
+
+.workflow-card {
+    flex: 1;
+
+    min-height: 109px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    color: white;
+
+    font-size: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: transform 0.15s;
+}
+
+.workflow-card:hover {
+    transform: translateY(-2px);
+}
+
+.workflow-card.selected {
+    outline: 3px solid #111;
+
+    outline-offset: -3px;
+}
+
+
+/* Orange */
+
+.approval-card {
+    background: #ed9807;
+}
+
+
+/* Grey */
+
+.pending-card {
+    background: #95a7b6;
+}
+
+
+/* Purple */
+
+.questions-card {
+    background: #976275;
+}
+
+
+/* =====================================================
+   APPROVAL TABS
+===================================================== */
+
+.approval-tabs {
+    display: flex;
+
+    gap: 6px;
+
+    margin-bottom: 16px;
+}
+
+.approval-tabs button {
+    height: 59px;
+
+    min-width: 150px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #6fa9e3;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.approval-tabs button.active {
+    border: 3px solid #111;
+
+    background: #6da9e3;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.candidate-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.candidate-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+/* Header */
+
+.candidate-table thead th {
+    height: 81px;
+
+    background: #40aa70;
+
+    color: white;
+
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    padding: 8px;
+}
+
+
+/* Columns */
+
+.candidate-table th:nth-child(1) {
+    width: 50px;
+}
+
+.candidate-table th:nth-child(2) {
+    width: 150px;
+}
+
+.candidate-table th:nth-child(3) {
+    width: 150px;
+}
+
+.candidate-table th:nth-child(4) {
+    width: 190px;
+}
+
+.candidate-table th:nth-child(5) {
+    width: 90px;
+}
+
+.candidate-table th:nth-child(6) {
+    width: 150px;
+}
+
+.candidate-table th:nth-child(7) {
+    width: 170px;
+}
+
+.candidate-table th:nth-child(8) {
+    width: 170px;
+}
+
+.candidate-table th:nth-child(9) {
+    width: 300px;
+}
+
+
+/* Rows */
+
+.candidate-table tbody td {
+    border: 1px solid #ddd;
+
+    padding: 9px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    vertical-align: middle;
+}
+
+
+/* No record */
+
+.no-record {
+    height: 100px;
+
+    border: none !important;
+
+    color: #40a6dd;
+
+    font-size: 34px !important;
+
+    font-weight: 400;
+}
+
+
+/* Action */
+
+.action-button {
+    border: none;
+
+    background: #438fc8;
+
+    color: white;
+
+    padding: 6px 15px;
+
+    border-radius: 4px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .product-nav span {
+        padding: 0 8px;
+    }
+
+    .nav-item {
+        padding: 0 10px;
+    }
+
+    .note-cards {
+        gap: 12px;
+    }
+
+    .note-card {
+        width: 220px;
+    }
+
+    .workflow-cards {
+        gap: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .workflow-card {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .app-top-nav {
+        overflow-x: auto;
+    }
+
+    .product-nav {
+        flex-shrink: 0;
+    }
+
+    .top-user {
+        display: none;
+    }
+
+    .main-nav {
+        overflow-x: auto;
+    }
+
+    .nav-item {
+        flex-shrink: 0;
+    }
+
+    .dashboard-banner {
+        height: 80px;
+    }
+
+    .dashboard-banner h1 {
+        font-size: 26px;
+    }
+
+    .note-cards {
+        flex-wrap: wrap;
+    }
+
+    .workflow-cards {
+        flex-wrap: wrap;
+    }
+
+    .workflow-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .brand {
+        width: 100px;
+        padding-left: 10px;
+    }
+
+    .dashboard-content {
+        width: 95%;
+    }
+
+    .dashboard-banner h1 {
+        font-size: 21px;
+    }
+
+    .note-card {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .note-cards {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-bottom: 25px;
+    }
+
+    .workflow-card {
+        flex: 0 0 100%;
+
+        min-height: 85px;
+    }
+
+    .workflow-cards {
+        flex-direction: column;
+
+        margin: 0 0 20px;
+    }
+
+    .approval-tabs {
+        overflow-x: auto;
+    }
+
+    .approval-tabs button {
+        flex-shrink: 0;
+    }
+
+    .candidate-table {
+        min-width: 1200px;
+    }
+}
